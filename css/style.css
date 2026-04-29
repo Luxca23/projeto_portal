@@ -1,0 +1,348 @@
+:root{
+    --cor-header: rgb(0, 0, 43);
+    --cor-font-header: rgb(44, 120, 235);
+    --cor-font-header2: rgb(118, 173, 255);
+    --cor-font-branco: rgb(255, 248, 234);
+    --cor-borda: rgba(63, 130, 255, 0.438);
+    --cor-partes-card: rgb(0, 89, 255);
+    --medidas-laterais: 2rem;
+    --medidas-laterais-pequenas: 1rem;
+
+    --fonte-pequena: 0.9rem;
+    --fonte-media: 1.2rem;
+    --fonte-grande: 1.5rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: wheat;
+} */
+
+header{
+    width:100%;
+    height: 120px;
+    background-color: var(--cor-header);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+header .headerPrimary{
+    display: grid;
+    padding: 0 var(--medidas-laterais);
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: solid 1px var(--cor-borda);
+}
+
+header .notices{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header .headerPrimary .v1{
+    /* border: solid 1px rgb(201, 201, 201); */
+    display: flex;
+}
+
+header .headerPrimary .v0{
+    /* border: solid 1px rgb(201, 201, 201); */
+    justify-content: start;
+}
+
+header .headerPrimary .logo{
+    color: var(--cor-font-header2);
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.caixa1{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.caixa2{
+    justify-content: end;
+}
+
+header .notices ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--medidas-laterais)
+}
+
+header .notices ul li{
+    list-style: none;
+    color: var(--cor-font-branco);
+}
+
+header .notices ul li a{
+    text-decoration: none;
+    color: var(--cor-font-branco);
+    font-family: "Archivo", sans-serif;
+}
+
+header .notices ul li a:hover{
+    color: var(--cor-font-header2);
+    transition: 0.3s;
+}
+
+header .headerPrimary .search{
+    justify-content: end;
+}
+
+.caixa1 p{
+    color: var(--cor-font-branco);
+    font-weight: 600;
+    font-family: "Archivo", sans-serif;
+}
+
+.caixa1 .hamb, .caixa1 .lupa{
+    color: var(--cor-font-branco);
+    cursor: pointer;
+}
+
+/*INICIO CONTAINER*/
+
+.container{
+    width:100%;
+    height: 100dvh;
+    background-color: var(--cor-header);
+    padding: var(--medidas-laterais);
+}
+
+.area1{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    border: 1px solid var(--cor-borda);
+}
+
+.area1 .imagens{
+    width:100%;
+    height:100%;
+}
+
+.area1 .imagens .camada{
+    width:100%;
+    height:100%;
+    background: linear-gradient(to top, black, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:var(--medidas-laterais-pequenas);
+}
+
+.area1 .imagens .camada p{
+    color: var(--cor-font-branco);
+    font-family: "Archivo", sans-serif;
+}
+
+.area1 .imagens .camada .textocard{
+    font-weight: 800;
+    font-size: var(--fonte-pequena);
+}
+
+.area1 .imagens .camada .topicocard{
+    padding: 10px;
+    margin-bottom:10px;
+    background-color: var(--cor-partes-card);
+    width: fit-content;
+    border-radius: 9px;
+    box-shadow: -5px 0px 10px black;
+}
+
+
+.area1 .imagens:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: url(../assets/images/wikiimages-mars-67522_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.area1 .imagens:nth-child(2){
+    background: url(../assets/images/fancycrave1-apple-916402_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area1 .imagens:nth-child(3){
+    background: url(../assets/images/stocksnap-people-2557494_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area1 .imagens:nth-child(4){
+    background: url(../assets/images/gigxels-headphones-6159058_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area1 .imagens:nth-child(5){
+    background: url(../assets/images/funkyfocus-mobile-phone-1875813_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container .areaBorda{
+    border: none;
+    border-top: 1px solid var(--cor-borda);
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px auto;
+    /* background-color: rgb(178, 146, 255); */
+    /* gap:0; */
+}
+
+
+.caixaVM{
+    width:100%;
+    /* background-color: aquamarine; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Archivo", sans-serif;
+}
+
+.caixaVM .caixaver{
+    column-gap:2px;
+}
+
+.caixaVM .caixaver a{
+    text-decoration: none;
+    color: var(--cor-font-branco);
+    display: flex;
+    align-items: center;
+}
+
+.caixaVM .caixaver a .bi-arrow-right-short{
+    display: flex;
+    align-items: center;
+}
+
+.caixaVM p{
+    color: var(--cor-font-branco);
+    font-weight: 600;
+}
+
+.container .areaBorda .containerimagens2{
+    /* background-color: rgb(54, 54, 49); */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5px;
+}
+
+.containerimagens2 .caixainfo{
+    display: grid;
+    grid-template-rows: 0.7fr 1fr;
+    row-gap: 5px;
+    /* background-color: hotpink; */
+}
+
+/* .container .areaBorda .containerimagens2 .imagemsemana{
+    
+} */
+
+.containerimagens2 .caixainfo{
+    font-family: "Archivo", sans-serif;
+    font-style: italic;
+    font-size: var(--fonte-pequena);
+    color: var(--cor-font-branco);
+    text-align: left;
+    
+}
+
+.containerimagens2 .caixainfo:nth-child(1) .imagemsemana{
+    background: url(../assets/images/bee-tech.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerimagens2 .caixainfo:nth-child(2) .imagemsemana{
+    background: url(../assets/images/note.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerimagens2 .caixainfo:nth-child(3) .imagemsemana{
+    background: url(../assets/images/roboIA.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.containerimagens2 .caixainfo:nth-child(4) .imagemsemana{
+    background: url(../assets/images/trem.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 900px){
+    .container .area1 .imagens:nth-child(1){
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .container .area1{
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        font-size: var(--fonte-pequena);
+    }
+
+    .container{
+        height: auto;
+    }
+
+    header{
+        font-size: var(--fonte-pequena);
+    }
+
+    header .notices ul{
+        display: none;
+    }
+
+    header .notices{
+        height:auto;
+    }
+
+    header{
+        height: auto;
+    }
+
+    .container .areaBorda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+}
+
+@media(max-width: 500px){
+    .container .area1{
+        grid-template-columns: 1fr;
+    }
+}
