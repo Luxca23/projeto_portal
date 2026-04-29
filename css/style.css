@@ -211,6 +211,7 @@ header .headerPrimary .search{
 
 
 .container .areaBorda{
+    height:auto;
     border: none;
     border-top: 1px solid var(--cor-borda);
     grid-template-columns: 1fr;
@@ -251,17 +252,22 @@ header .headerPrimary .search{
 }
 
 .container .areaBorda .containerimagens2{
-    /* background-color: rgb(54, 54, 49); */
+    height:auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap:5px;
+    /* background-color: red; */
 }
 
 .containerimagens2 .caixainfo{
     display: grid;
-    grid-template-rows: 0.7fr 1fr;
-    row-gap: 5px;
+    /*grid-template-rows: repeat(2, 1fr); */
+    row-gap: 10px;
     /* background-color: hotpink; */
+}
+
+.containerimagens2 .caixainfo p{
+    
 }
 
 /* .container .areaBorda .containerimagens2 .imagemsemana{
@@ -275,6 +281,18 @@ header .headerPrimary .search{
     color: var(--cor-font-branco);
     text-align: left;
     
+}
+
+.container2{
+    height:auto;
+}
+
+.container3{
+    background-color: pink;
+}
+
+.containerimagens2 .caixainfo .imagemsemana{
+    height: 200px;
 }
 
 .containerimagens2 .caixainfo:nth-child(1) .imagemsemana{
