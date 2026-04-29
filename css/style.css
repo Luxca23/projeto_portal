@@ -161,15 +161,21 @@ header .headerPrimary .search{
     font-size: var(--fonte-pequena);
 }
 
-.area1 .imagens .camada .topicocard{
+.area1 .imagens .camada .topicocard, .topicocard{
     padding: 10px;
     margin-bottom:10px;
     background-color: var(--cor-partes-card);
     width: fit-content;
     border-radius: 9px;
     box-shadow: -5px 0px 10px black;
+    color:var(--cor-font-branco);
+    font-family:"Archivo" sans-serif;
 }
 
+.IAvistas .caixaria .textomateria{
+    font-family: "Archivo";
+    font-size: 0.8rem;
+}
 
 .area1 .imagens:nth-child(1){
     grid-column: 1/3;
@@ -287,7 +293,24 @@ header .headerPrimary .search{
 .container3{
     background-color: var(--cor-header);
     padding: 0 var(--medidas-laterais);
-    border: 1px solid var(--cor-font-header2)
+    border: 1px solid var(--cor-font-header2);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.container3 .IAvistas, .container3 .infoextra{
+    border:1px solid red;
+}
+
+.container3 .IAvistas{
+    /* background-color: wheat; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.container3 .IAvistas .caixaria{
+    border:1px solid yellow;
 }
 
 .containerimagens2 .caixainfo .imagemsemana{
