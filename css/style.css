@@ -185,6 +185,7 @@ header .headerPrimary .search{
 
 .IAvistas .caixaria .textomateria .titulos{
     font-weight: 800;
+    font-size: 17px;
 }
 
 .IAvistas .caixaria .textomateria .textoMateria2{
@@ -198,7 +199,7 @@ header .headerPrimary .search{
     height:100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     row-gap:8px;
 }
 
