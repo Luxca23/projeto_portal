@@ -266,9 +266,6 @@ header .headerPrimary .search{
     /* background-color: hotpink; */
 }
 
-.containerimagens2 .caixainfo p{
-    
-}
 
 /* .container .areaBorda .containerimagens2 .imagemsemana{
     
@@ -288,7 +285,9 @@ header .headerPrimary .search{
 }
 
 .container3{
-    background-color: pink;
+    background-color: var(--cor-header);
+    padding: 0 var(--medidas-laterais);
+    border: 1px solid var(--cor-font-header2)
 }
 
 .containerimagens2 .caixainfo .imagemsemana{
