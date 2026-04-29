@@ -199,6 +199,7 @@ header .headerPrimary .search{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    row-gap:8px;
 }
 
 .area1 .imagens:nth-child(1){
@@ -339,8 +340,8 @@ header .headerPrimary .search{
 }
 
 .container3 .IAvistas .caixaria{
-    border:1px solid var(--cor-font-header);
-    border-radius: 5px;
+    border:1px solid var(--cor-borda);
+    /* border-radius:15px; */
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
