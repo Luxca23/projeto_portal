@@ -174,6 +174,7 @@ header .headerPrimary .search{
 
 .IAvistas .caixaria .textomateria{
     width:50%;
+    height: 100%;
     font-family: "Archivo";
     font-size: 0.8rem;
     color: var(--cor-font-branco);
@@ -187,7 +188,17 @@ header .headerPrimary .search{
 }
 
 .IAvistas .caixaria .textomateria .textoMateria2{
-    color:gray
+    color:gray;
+    height:auto
+}
+
+.IAvistas .caixaria .textomateria .caixaStart{
+    /* background-color: brown; */
+    width:auto;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .area1 .imagens:nth-child(1){
@@ -306,13 +317,13 @@ header .headerPrimary .search{
     height:auto;
     background-color: var(--cor-header);
     padding: 0 var(--medidas-laterais);
-    border: 1px solid var(--cor-font-header2);
+    /* border-top: 1px solid var(--cor-font-header2); */
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
 
 .container3 .IAvistas, .container3 .infoextra{
-    border:3px solid red;
+    border-top:1px solid var(--cor-borda) 
 }
 
 .container3 .IAvistas{
@@ -324,10 +335,12 @@ header .headerPrimary .search{
 
 .container3 .IAvistas .areaborda2{
     gap:0;
+    border-top: none;
 }
 
 .container3 .IAvistas .caixaria{
-    border:1px solid yellow;
+    border:1px solid var(--cor-font-header);
+    border-radius: 5px;
     display: flex;
     /* flex-direction: column; */
     justify-content: space-between;
