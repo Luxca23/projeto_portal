@@ -353,11 +353,11 @@ header .headerPrimary .search{
 
 .infoextra .sessaojaviu .caixaVM{
     /* height:20%; */
+    border-top: 1px solid var(--cor-borda);
     padding: 0;
 } 
 
 .infoextra .sessaojaviu{
-    border: 1px solid var(--cor-borda);
     height: auto;
     display: grid;
     grid-template-rows: 30px repeat(5, 1fr);
