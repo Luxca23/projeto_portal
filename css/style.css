@@ -549,7 +549,7 @@ footer{
     }
 
     header .notices ul{
-        display: none;
+        font-size:10px
     }
 
     header .notices{
@@ -567,8 +567,48 @@ footer{
 
 }
 
-@media(max-width: 500px){
+@media(max-width: 650px){
     .container .area1{
         grid-template-columns: 1fr;
+    }
+
+    header .notices ul{
+        display: none;
+    }
+
+    .container3{
+        grid-template-columns: 1fr;
+    }
+
+    .container2 .areaBorda .containerimagens2{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 60px;
+    }
+
+    .area1 .imagens{
+        height:300px
+    }
+
+    .container3 .IAvistas .caixaria{
+        flex-direction: column-reverse;
+    }
+
+    .IAvistas .caixaria .textomateria .caixaStart{
+        height:auto;
+    }
+
+    .IAvistas .caixaria .textomateria{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .headerPrimary .logo h1{
+        font-size: 14px;
+    }
+
+    .caixoteimagems .caixaStart .titulo{
+        font-size: 5px;
     }
 }
