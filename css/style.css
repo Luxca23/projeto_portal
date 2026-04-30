@@ -568,12 +568,21 @@ footer{
 }
 
 @media(max-width: 650px){
+
+    header{
+        padding:20px 0;
+    }
+
     .container .area1{
         grid-template-columns: 1fr;
     }
 
-    header .notices ul{
+    header .notices{
         display: none;
+    }
+
+    header .headerPrimary{
+        border:none;
     }
 
     .container3{
