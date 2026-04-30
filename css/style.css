@@ -322,10 +322,37 @@ header .headerPrimary .search{
     /* border-top: 1px solid var(--cor-font-header2); */
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    column-gap: 15px;
 }
 
-.container3 .IAvistas, .container3 .infoextra{
+.container3 .IAvistas{
     border-top:1px solid var(--cor-borda) 
+}
+
+.container3 .infoextra{
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-rows:1fr 2fr ;
+    row-gap: 15px;
+}
+
+.infoextra .anuncio{
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    color: var(--cor-font-branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.infoextra .anuncio h1{
+    font-family: "Archivo", sans-serif;
+}
+
+.infoextra .sessaojaviu{
+    border: 1px solid var(--cor-borda);
+    height: auto;
 }
 
 .container3 .IAvistas{
