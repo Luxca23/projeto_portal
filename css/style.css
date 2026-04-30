@@ -374,35 +374,35 @@ header .headerPrimary .search{
 }
 
 .sessaojaviu .caixoteimagems .imagemsemana{
-    background: url(../assets/images/jimage1.jpg);
+    background: url("../assets/images/jimage1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sessaojaviu .caixoteimagems .imagemsemana2{
-    background: url(../assets/images/jimage2.jpg);
+    background: url("../assets/images/jimage2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sessaojaviu .caixoteimagems .imagemsemana3{
-    background: url(../assets/images/jimage3.jpg);
+    background: url("../assets/images/jimage3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sessaojaviu .caixoteimagems .imagemsemana4{
-    background: url(../assets/images/jimage4.jpg);
+    background: url("../assets/images/jimage4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sessaojaviu .caixoteimagems .imagemsemana5{
-    background: url(../assets/images/jimage5.jpg);
+    background: url("../assets/images/jimage5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
